@@ -1,0 +1,75 @@
+/* Box model mais previsível */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Tira as margens padrão (você define as suas depois) */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Texto mais legível e página com altura total */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Mídia responsiva por padrão */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formulários herdam a fonte (completa o normalize) */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Palavras longas não estouram o layout */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Quebra de linha mais bonita */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Contorno de foco visível só para quem navega pelo teclado */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Movimento só para quem não pediu redução no sistema */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,11 @@
+:root {
+  color-scheme: dark;
+  --cor-fundo: #121212;
+  --cor-texto: #e6e6e6;
+}
+
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --cor-fundo: #ffffff;
+  --cor-texto: #1a1a1a;
+}
