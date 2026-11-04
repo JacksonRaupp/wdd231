@@ -1,7 +1,8 @@
 :root {
   color-scheme: dark;
   --cor-texto: currentColor;
-  --cor-concluido: #2e7d32;
+  --cor-concluido: #1b5e20;
+  --cor-botao: #333;
 }
 
 img {
@@ -100,7 +101,15 @@ body {
 
       button {
         padding: 4px;
+        border: 0.1px solid;
+        background-color: var(--cor-botao);
+        color: #fff;
         cursor: pointer;
+      }
+
+      button:hover,
+      button:focus {
+        background-color: #000;
       }
     }
 
