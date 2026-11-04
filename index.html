@@ -4,25 +4,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD231</title>
+
+    <title>WDD 231 | Jackson Raupp</title>
     <meta name="author" content="Jackson Raupp" />
     <meta name="description" content="Desenvolvimento Frontend para Web I" />
 
-    <link rel="stylesheet" href="estilos/normalize.css" />
-    <link rel="stylesheet" href="estilos/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="estilos/normalize.css" />
+    <link rel="stylesheet" href="estilos/normalize-atualizado.css" />
+    <link rel="stylesheet" href="estilos/telas-pequenas.css" />
+    <link rel="stylesheet" href="estilos/telas-grandes.css" />
+
+    <script src="scripts/cabecalho.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/rodape.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1>WDD231 - Desenvolvimento Frontend para Web I</h1>
+      <img
+        src="imagens/logo.svg"
+        alt="Logo de Jackson Raupp"
+        width="44"
+        height="44"
+      />
 
-      <button id="trocar-tema" type="button">Alternar tema</button>
+      <span>Jackson Raupp</span>
+
+      <button id="botao-hamburguer" aria-label="Menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="index.html" class="ativo" aria-current="page"
+              >Página Inicial</a
+            >
+          </li>
+          <li><a href="camara.html">Projeto da Câmara</a></li>
+          <li><a href="final.html">Projeto Final</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main></main>
+    <main>
+      <h1>Página Inicial</h1>
 
-    <footer>&copy;<span id="anoAtual"></span></footer>
+      <section id="sobre" class="card">
+        <h2>Sobre Mim</h2>
+
+        <p class="conteudo">
+          Olá! Sou Jackson Raupp, aluno do certificado de Programação Web e de
+          Computadores da BYU-Pathway. Gosto de transformar ideias em páginas
+          simples, rápidas e acessíveis.
+        </p>
+      </section>
+
+      <section id="foto" class="card">
+        <h2>Foto</h2>
+
+        <img
+          src="imagens/foto.svg"
+          alt="Foto de Jackson Raupp"
+          width="300"
+          height="225"
+          class="conteudo"
+        />
+      </section>
+
+      <section id="cursos" class="card">
+        <h2>Cursos de Certificação Web</h2>
+
+        <div class="conteudo">
+          <div id="escolha">
+            <button id="todos">Todos</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+          </div>
+
+          <div id="resultado"></div>
+
+          <p>
+            O total de créditos pelos cursos acima é
+            <span id="creditosTotais"></span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="social">
+        <a href="https://github.com/JacksonRaupp">
+          <img src="imagens/github.svg" alt="Github" width="32" height="32" />
+        </a>
+
+        <a href="https://www.linkedin.com/">
+          <img
+            src="imagens/linkedin.svg"
+            alt="Linkedin"
+            width="32"
+            height="32"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img
+            src="imagens/instagram.svg"
+            alt="Instagram"
+            width="32"
+            height="32"
+          />
+        </a>
+      </section>
+
+      <section id="dados">
+        <p>&copy; <span id="anoAtual"></span> • Jackson Raupp • MT, Brasil</p>
+
+        <p id="ultimaModificacao"></p>
+      </section>
+    </footer>
   </body>
 </html>

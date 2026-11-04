@@ -1,0 +1,5 @@
+document.getElementById("anoAtual").textContent = new Date().getFullYear();
+
+document.getElementById("ultimaModificacao").textContent =
+  "Última Modificação: " +
+  new Date(document.lastModified).toLocaleString("pt-BR");

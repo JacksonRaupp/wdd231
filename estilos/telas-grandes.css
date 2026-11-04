@@ -1,0 +1,25 @@
+@media (min-width: 640px) {
+  body {
+    header {
+      #botao-hamburguer {
+        display: none;
+      }
+
+      nav {
+        #menu {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+
+    main {
+      grid-template-columns: 1fr 1fr;
+
+      h1,
+      #cursos {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}

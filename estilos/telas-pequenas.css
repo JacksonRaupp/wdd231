@@ -1,0 +1,143 @@
+:root {
+  color-scheme: dark;
+  --cor-texto: currentColor;
+  --cor-concluido: #2e7d32;
+}
+
+img {
+  height: auto;
+}
+
+body {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-size: small;
+
+  header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    justify-items: center;
+    gap: 8px;
+    padding: 8px;
+
+    #botao-hamburguer {
+      border: 0;
+      background: none;
+      color: var(--cor-texto);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    nav {
+      grid-column: 1/4;
+      width: 100%;
+
+      #menu {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+
+        a {
+          display: block;
+          padding: 8px;
+          color: var(--cor-texto);
+          text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+          background-color: rgb(128 128 128 / 0.3);
+        }
+
+        a.ativo {
+          border-bottom: 2px solid;
+          font-weight: bold;
+        }
+      }
+
+      #menu.aberto {
+        display: flex;
+      }
+    }
+  }
+
+  main {
+    display: grid;
+    gap: 10px;
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 0 10px;
+
+    h1 {
+      justify-self: start;
+    }
+
+    .card {
+      width: 100%;
+
+      h2 {
+        width: 100%;
+        padding: 3px;
+        border: 0.1px solid;
+
+        text-align: center;
+      }
+
+      .conteudo {
+        width: 100%;
+        padding: 8px;
+
+        border: 0.1px solid;
+        border-top: 0;
+      }
+    }
+
+    #escolha {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+
+      button {
+        padding: 4px;
+        cursor: pointer;
+      }
+    }
+
+    #resultado {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 8px;
+      margin: 8px 0;
+
+      .curso {
+        padding: 4px;
+        border: 0.1px solid;
+        text-align: center;
+      }
+
+      .concluido {
+        background-color: var(--cor-concluido);
+        color: #fff;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    #social {
+      display: flex;
+      padding: 8px;
+
+      border-top: 0.1px solid;
+
+      justify-content: center;
+      gap: 8px;
+    }
+
+    #dados {
+      padding-bottom: 8px;
+    }
+  }
+}
