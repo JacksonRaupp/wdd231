@@ -79,7 +79,7 @@ function mostrarCursos(lista) {
       card.classList.add("concluido");
     }
 
-    card.textContent = `${curso.assunto} ${curso.numero}`;
+    card.textContent = `${curso.concluido ? "✓ " : ""}${curso.assunto} ${curso.numero}`;
     resultado.appendChild(card);
   });
 
