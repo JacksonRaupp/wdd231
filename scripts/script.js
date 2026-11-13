@@ -89,16 +89,22 @@ function mostrarCursos(lista) {
   );
 }
 
-document.getElementById("todos").addEventListener("click", () => {
-  mostrarCursos(cursos);
-});
+const filtros = {
+  todos: () => cursos,
+  cse: () => cursos.filter((curso) => curso.assunto === "CSE"),
+  wdd: () => cursos.filter((curso) => curso.assunto === "WDD"),
+};
 
-document.getElementById("cse").addEventListener("click", () => {
-  mostrarCursos(cursos.filter((curso) => curso.assunto === "CSE"));
-});
+const botoesFiltro = document.querySelectorAll("#escolha button");
 
-document.getElementById("wdd").addEventListener("click", () => {
-  mostrarCursos(cursos.filter((curso) => curso.assunto === "WDD"));
+botoesFiltro.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    botoesFiltro.forEach((outro) => {
+      outro.setAttribute("aria-pressed", outro === botao);
+    });
+
+    mostrarCursos(filtros[botao.id]());
+  });
 });
 
 mostrarCursos(cursos);
