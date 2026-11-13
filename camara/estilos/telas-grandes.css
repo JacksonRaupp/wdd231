@@ -1,39 +1,35 @@
 @media (min-width: 640px) {
-  header {
-    grid-template-columns: 1fr auto;
+  #botao-hamburguer {
+    display: none;
+  }
 
-    #botao-hamburguer {
-      display: none;
-    }
+  nav {
+    grid-column: auto;
+  }
 
-    nav {
-      grid-column: auto;
-
-      #menu {
-        display: flex;
-        flex-direction: row;
-        gap: 4px;
-      }
-    }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
   }
 
   #membros.lista .membro {
     grid-template-columns: 2fr 3fr 2fr 2fr;
     align-items: center;
     gap: 12px;
+  }
 
-    .info {
-      display: contents;
-    }
+  #membros.lista .info {
+    display: contents;
   }
 
   footer {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     text-align: start;
+  }
 
-    #desenvolvimento {
-      text-align: end;
-    }
+  #desenvolvimento {
+    text-align: end;
   }
 }
