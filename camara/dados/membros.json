@@ -1,0 +1,98 @@
+[
+  {
+    "nome": "Peixaria Rio Cuiabá",
+    "slogan": "Peixe fresco à moda pantaneira",
+    "endereco": "Av. Couto Magalhães, 1200 - Centro",
+    "telefone": "(65) 3000-0101",
+    "email": "contato@peixariariocuiaba.example",
+    "site": "https://example.com/peixaria-rio-cuiaba",
+    "imagem": "peixaria-rio-cuiaba.svg",
+    "nivel": 3,
+    "setor": "Restaurante",
+    "fundacao": 1998
+  },
+  {
+    "nome": "Pantanal Agro Insumos",
+    "slogan": "Do campo para a sua mesa",
+    "endereco": "Av. da FEB, 2450 - Ponte Nova",
+    "telefone": "(65) 3000-0202",
+    "email": "vendas@pantanalagro.example",
+    "site": "https://example.com/pantanal-agro",
+    "imagem": "pantanal-agro.svg",
+    "nivel": 3,
+    "setor": "Agronegócio",
+    "fundacao": 2005
+  },
+  {
+    "nome": "Cristo Rei Materiais de Construção",
+    "slogan": "Tudo para a sua obra",
+    "endereco": "Av. Filinto Müller, 880 - Cristo Rei",
+    "telefone": "(65) 3000-0303",
+    "email": "atendimento@cristoreimateriais.example",
+    "site": "https://example.com/cristo-rei-materiais",
+    "imagem": "cristo-rei-materiais.svg",
+    "nivel": 2,
+    "setor": "Construção",
+    "fundacao": 2001
+  },
+  {
+    "nome": "Marechal Turismo e Viagens",
+    "slogan": "Sua viagem começa aqui",
+    "endereco": "Av. João Ponce de Arruda, 300 - Jardim Aeroporto",
+    "telefone": "(65) 3000-0404",
+    "email": "reservas@marechalturismo.example",
+    "site": "https://example.com/marechal-turismo",
+    "imagem": "marechal-turismo.svg",
+    "nivel": 2,
+    "setor": "Turismo",
+    "fundacao": 2012
+  },
+  {
+    "nome": "Padaria Ponte Nova",
+    "slogan": "Pão quentinho toda hora",
+    "endereco": "Rua Presidente Dutra, 150 - Ponte Nova",
+    "telefone": "(65) 3000-0505",
+    "email": "pedidos@padariapontenova.example",
+    "site": "https://example.com/padaria-ponte-nova",
+    "imagem": "padaria-ponte-nova.svg",
+    "nivel": 1,
+    "setor": "Alimentação",
+    "fundacao": 2015
+  },
+  {
+    "nome": "Clínica Sorriso Várzea",
+    "slogan": "Cuidando do seu sorriso",
+    "endereco": "Av. Júlio Campos, 1720 - Centro",
+    "telefone": "(65) 3000-0606",
+    "email": "agenda@sorrisovarzea.example",
+    "site": "https://example.com/clinica-sorriso",
+    "imagem": "clinica-sorriso.svg",
+    "nivel": 1,
+    "setor": "Saúde",
+    "fundacao": 2010
+  },
+  {
+    "nome": "Cerrado Tech Soluções",
+    "slogan": "Tecnologia feita em Mato Grosso",
+    "endereco": "Av. Couto Magalhães, 3400 - Água Limpa",
+    "telefone": "(65) 3000-0707",
+    "email": "ola@cerradotech.example",
+    "site": "https://example.com/cerrado-tech",
+    "imagem": "cerrado-tech.svg",
+    "nivel": 2,
+    "setor": "Tecnologia",
+    "fundacao": 2019
+  },
+  {
+    "nome": "Auto Peças Mapim",
+    "slogan": "Peças e serviços para o seu carro",
+    "endereco": "Av. da FEB, 5100 - Mapim",
+    "telefone": "(65) 3000-0808",
+    "email": "loja@autopecasmapim.example",
+    "site": "https://example.com/auto-pecas-mapim",
+    "imagem": "auto-pecas-mapim.svg",
+    "nivel": 1,
+    "setor": "Automotivo",
+    "fundacao": 2008
+  }
+]
