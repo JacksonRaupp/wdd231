@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Início | Câmara de Comércio de Várzea Grande</title>
+    <meta name="author" content="Jackson Raupp">
+    <meta
+      name="description"
+      content="Câmara de Comércio de Várzea Grande - MT: eventos, tempo atual e empresas associadas em destaque."
+    >
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta
+      property="og:title"
+      content="Início | Câmara de Comércio de Várzea Grande"
+    >
+    <meta
+      property="og:description"
+      content="Eventos, tempo e empresas em destaque da Câmara de Comércio de Várzea Grande - MT."
+    >
+    <meta
+      property="og:image"
+      content="https://jacksonraupp.github.io/wdd231/camara/imagens/og-camara.png"
+    >
+    <meta
+      property="og:url"
+      content="https://jacksonraupp.github.io/wdd231/camara/"
+    >
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/cabecalho.js" defer></script>
+    <script src="scripts/inicio.js" defer></script>
+    <script src="scripts/rodape.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="marca">
+        <img
+          src="imagens/logo.svg"
+          alt="Logo da Câmara de Comércio de Várzea Grande"
+          width="48"
+          height="48"
+        >
+
+        <span>
+          <strong>Várzea Grande</strong>
+          <small>Câmara de Comércio</small>
+        </span>
+      </a>
+
+      <button id="botao-hamburguer" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        ☰
+      </button>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html" class="ativo" aria-current="page">Início</a></li>
+          <li>
+            <a href="diretorio.html">Diretório</a>
+          </li>
+          <li><a href="associe-se.html">Associe-se</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="inicio">
+      <section id="hero">
+        <img
+          src="imagens/hero.svg"
+          alt="Ilustração de Várzea Grande ao pôr do sol, com prédios e o rio"
+          width="1200"
+          height="500"
+          fetchpriority="high"
+        >
+
+        <div id="cta">
+          <h1>Câmara de Comércio de Várzea Grande</h1>
+          <p>Fortalecendo os negócios da nossa cidade.</p>
+          <a href="associe-se.html">Associe-se</a>
+        </div>
+      </section>
+
+      <section class="cartao">
+        <h2>Eventos</h2>
+        <ul>
+          <li><strong>05/12</strong> - Café com Empresários</li>
+          <li><strong>12/12</strong> - Feira de Natal do Comércio</li>
+          <li><strong>20/01</strong> - Palestra: Vendas pela Internet</li>
+        </ul>
+      </section>
+
+      <section class="cartao">
+        <h2>Tempo Atual</h2>
+        <div id="tempo"></div>
+      </section>
+
+      <section class="cartao">
+        <h2>Previsão</h2>
+        <ul id="previsao"></ul>
+      </section>
+
+      <section id="destaques">
+        <h2>Empresas em Destaque</h2>
+        <div id="lista-destaques"></div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contato">
+        <h2>Câmara de Comércio de Várzea Grande</h2>
+        <p>Av. Couto Magalhães, 1000 - Centro</p>
+        <p>Várzea Grande - MT, 78110-000</p>
+        <p>contato@camaravg.example</p>
+        <p>(65) 3000-0000</p>
+      </section>
+
+      <div id="social">
+        <a href="https://www.youtube.com/">
+          <img src="imagens/youtube.svg" alt="YouTube" width="32" height="32">
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img src="imagens/instagram.svg" alt="Instagram" width="32" height="32">
+        </a>
+
+        <a href="https://www.linkedin.com/">
+          <img src="imagens/linkedin.svg" alt="LinkedIn" width="32" height="32">
+        </a>
+      </div>
+
+      <div id="desenvolvimento">
+        <p><strong>Projeto de Aula WDD 231</strong></p>
+        <p>Jackson Raupp</p>
+        <p>&copy; <span id="anoAtual"></span> Câmara de Comércio de Várzea Grande</p>
+        <p id="ultimaModificacao"></p>
+      </div>
+    </footer>
+  </body>
+</html>

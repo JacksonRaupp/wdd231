@@ -221,6 +221,68 @@ h1 {
   background-color: var(--cor-fundo);
 }
 
+/* Página inicial */
+
+.inicio {
+  display: grid;
+  gap: 16px;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#cta {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  padding: 16px;
+  background-color: var(--cor-superficie);
+}
+
+#cta a {
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: var(--cor-primaria);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#cta a:hover,
+#cta a:focus-visible {
+  background-color: #000;
+}
+
+.cartao,
+#destaques .membro {
+  padding: 16px;
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-superficie);
+}
+
+.cartao ul {
+  padding-left: 16px;
+}
+
+#lista-destaques {
+  display: grid;
+  gap: 16px;
+}
+
+#destaques .membro {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
 /* Rodapé */
 
 footer {
