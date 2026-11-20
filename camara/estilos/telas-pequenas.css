@@ -235,10 +235,16 @@ h1 {
 #hero img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 #cta {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  max-width: 360px;
   display: grid;
   justify-items: start;
   gap: 8px;
