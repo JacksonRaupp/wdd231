@@ -98,7 +98,7 @@
             type="text"
             name="cargo"
             title="Apenas letras, hífens e espaços, com pelo menos 7 caracteres"
-            autocomplete="cargo-na-organizacao"
+            autocomplete="section-cargo-na-organizacao organization-title"
             pattern="[A-Za-zÀ-ÿ \-]{7,}"
           >
         </label>
@@ -123,7 +123,7 @@
             type="text"
             name="empresa"
             title="Nome da empresa ou organização"
-            autocomplete="organizacao"
+            autocomplete="section-organizacao organization"
             required
           >
         </label>
@@ -131,10 +131,10 @@
         <label>Nível de associação
           <select name="nivel" title="Nível de associação" required>
               <option value="" disabled selected>Selecione um nível</option>
-              <option value="np">Associação NP</option>
-              <option value="bronze">Associação Bronze</option>
-              <option value="silver">Associação Prata</option>
-              <option value="gold">Associação Ouro</option>
+              <option value="np">Associação NP (np)</option>
+              <option value="bronze">Associação Bronze (bronze)</option>
+              <option value="silver">Associação Prata (silver)</option>
+              <option value="gold">Associação Ouro (gold)</option>
           </select>
         </label>
 
@@ -151,29 +151,29 @@
         <h2>Níveis de Associação</h2>
         <div id="cartoes-niveis">
           <div class="nivel-cartao">
-            <h3>Associação NP</h3>
+            <h3>Associação NP (np)</h3>
             <button type="button" data-modal="modal-np">Saiba mais</button>
           </div>
 
           <div class="nivel-cartao">
-            <h3>Associação Bronze</h3>
+            <h3>Associação Bronze (bronze)</h3>
             <button type="button" data-modal="modal-bronze">Saiba mais</button>
           </div>
 
           <div class="nivel-cartao">
-            <h3>Associação Prata</h3>
+            <h3>Associação Prata (silver)</h3>
             <button type="button" data-modal="modal-silver">Saiba mais</button>
           </div>
 
           <div class="nivel-cartao">
-            <h3>Associação Ouro</h3>
+            <h3>Associação Ouro (gold)</h3>
             <button type="button" data-modal="modal-gold">Saiba mais</button>
           </div>
         </div>
       </section>
 
       <dialog id="modal-np">
-        <h3>Associação NP</h3>
+        <h3>Associação NP (np)</h3>
         <p>Para organizações sem fins lucrativos. Sem taxa.</p>
         <ul>
           <li>Listagem no diretório de membros</li>
@@ -183,7 +183,7 @@
       </dialog>
 
       <dialog id="modal-bronze">
-        <h3>Associação Bronze</h3>
+        <h3>Associação Bronze (bronze)</h3>
         <p>R$ 100 por mês.</p>
         <ul>
           <li>Tudo da associação NP</li>
@@ -194,7 +194,7 @@
       </dialog>
 
       <dialog id="modal-silver">
-        <h3>Associação Prata</h3>
+        <h3>Associação Prata (silver)</h3>
         <p>R$ 250 por mês.</p>
         <ul>
           <li>Tudo da associação Bronze</li>
@@ -205,7 +205,7 @@
       </dialog>
 
       <dialog id="modal-gold">
-        <h3>Associação Ouro</h3>
+        <h3>Associação Ouro (gold)</h3>
         <p>R$ 500 por mês.</p>
         <ul>
           <li>Tudo da associação Prata</li>
