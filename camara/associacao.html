@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Associe-se | Câmara de Comércio de Várzea Grande</title>
+    <meta name="author" content="Jackson Raupp">
+    <meta
+      name="description"
+      content="Formulário para se associar à Câmara de Comércio de Várzea Grande - MT e conhecer os níveis de associação."
+    >
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta
+      property="og:title"
+      content="Associe-se | Câmara de Comércio de Várzea Grande"
+    >
+    <meta
+      property="og:description"
+      content="Formulário para se associar à Câmara de Comércio de Várzea Grande - MT e conhecer os níveis de associação."
+    >
+    <meta
+      property="og:image"
+      content="https://jacksonraupp.github.io/wdd231/camara/imagens/og-camara.png"
+    >
+    <meta
+      property="og:url"
+      content="https://jacksonraupp.github.io/wdd231/camara/associacao.html"
+    >
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/cabecalho.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
+    <script src="scripts/rodape.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" id="marca">
+        <img
+          src="imagens/logo.svg"
+          alt="Logo da Câmara de Comércio de Várzea Grande"
+          width="48"
+          height="48"
+        >
+
+        <span>
+          <strong>Várzea Grande</strong>
+          <small>Câmara de Comércio</small>
+        </span>
+      </a>
+
+      <button id="botao-hamburguer" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        ☰
+      </button>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li>
+            <a href="diretorio.html">Diretório</a>
+          </li>
+          <li><a href="associacao.html" class="ativo" aria-current="page">Associe-se</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="associacao">
+      <h1>Associe-se à Câmara</h1>
+
+      <form action="agradecimento.html" method="get">
+        <label>Nome *
+          <input type="text" name="nome" title="Seu nome" autocomplete="given-name" required>
+        </label>
+
+        <label>Sobrenome *
+          <input type="text" name="sobrenome" title="Seu sobrenome" autocomplete="family-name" required>
+        </label>
+
+        <label>Cargo na organização
+          <input
+            type="text"
+            name="cargo"
+            title="Apenas letras, hífens e espaços, com pelo menos 7 caracteres"
+            autocomplete="organization-title"
+            pattern="[A-Za-zÀ-ÿ \-]{7,}"
+          >
+        </label>
+
+        <label>E-mail *
+          <input
+            type="email"
+            name="email"
+            title="Seu e-mail"
+            autocomplete="email"
+            placeholder="nome@exemplo.com"
+            required
+          >
+        </label>
+
+        <label>Celular *
+          <input type="tel" name="celular" title="Seu número de celular" autocomplete="tel" required>
+        </label>
+
+        <label>Empresa/organização *
+          <input
+            type="text"
+            name="empresa"
+            title="Nome da empresa ou organização"
+            autocomplete="organization"
+            required
+          >
+        </label>
+
+        <label>Nível de associação
+          <select name="nivel" title="Nível de associação">
+              <option value="np">Associação NP</option>
+              <option value="bronze">Associação Bronze</option>
+              <option value="silver">Associação Prata</option>
+              <option value="gold">Associação Ouro</option>
+          </select>
+        </label>
+
+        <label>Descrição da empresa/organização
+          <textarea name="descricao" title="Descrição da atividade da empresa" rows="4"></textarea>
+        </label>
+
+        <input type="hidden" name="data" id="data">
+
+        <input type="submit" value="Enviar pedido">
+      </form>
+
+      <section id="niveis">
+        <h2>Níveis de Associação</h2>
+        <div id="cartoes-niveis">
+          <div class="nivel-cartao">
+            <h3>Associação NP</h3>
+            <button type="button" data-modal="modal-np">Saiba mais</button>
+          </div>
+
+          <div class="nivel-cartao">
+            <h3>Associação Bronze</h3>
+            <button type="button" data-modal="modal-bronze">Saiba mais</button>
+          </div>
+
+          <div class="nivel-cartao">
+            <h3>Associação Prata</h3>
+            <button type="button" data-modal="modal-silver">Saiba mais</button>
+          </div>
+
+          <div class="nivel-cartao">
+            <h3>Associação Ouro</h3>
+            <button type="button" data-modal="modal-gold">Saiba mais</button>
+          </div>
+        </div>
+      </section>
+
+      <dialog id="modal-np">
+        <h3>Associação NP</h3>
+        <p>Para organizações sem fins lucrativos. Sem taxa.</p>
+        <ul>
+          <li>Listagem no diretório de membros</li>
+          <li>Convite para os eventos da câmara</li>
+        </ul>
+        <form method="dialog">
+          <button>Fechar</button>
+        </form>
+      </dialog>
+
+      <dialog id="modal-bronze">
+        <h3>Associação Bronze</h3>
+        <p>R$ 100 por mês.</p>
+        <ul>
+          <li>Tudo da associação NP</li>
+          <li>Desconto de 10% nos eventos</li>
+          <li>Acesso aos treinamentos</li>
+        </ul>
+        <form method="dialog">
+          <button>Fechar</button>
+        </form>
+      </dialog>
+
+      <dialog id="modal-silver">
+        <h3>Associação Prata</h3>
+        <p>R$ 250 por mês.</p>
+        <ul>
+          <li>Tudo da associação Bronze</li>
+          <li>Desconto de 20% nos eventos</li>
+          <li>Destaque aleatório na página inicial</li>
+        </ul>
+        <form method="dialog">
+          <button>Fechar</button>
+        </form>
+      </dialog>
+
+      <dialog id="modal-gold">
+        <h3>Associação Ouro</h3>
+        <p>R$ 500 por mês.</p>
+        <ul>
+          <li>Tudo da associação Prata</li>
+          <li>Desconto de 50% nos eventos</li>
+          <li>Prioridade nos destaques da página inicial</li>
+          <li>Publicidade nas redes da câmara</li>
+        </ul>
+        <form method="dialog">
+          <button>Fechar</button>
+        </form>
+      </dialog>
+    </main>
+
+    <footer>
+      <section id="contato">
+        <h2>Câmara de Comércio de Várzea Grande</h2>
+        <p>Av. Couto Magalhães, 1000 - Centro</p>
+        <p>Várzea Grande - MT, 78110-000</p>
+        <p>contato@camaravg.example</p>
+        <p>(65) 3000-0000</p>
+      </section>
+
+      <div id="social">
+        <a href="https://www.youtube.com/">
+          <img src="imagens/youtube.svg" alt="YouTube" width="32" height="32">
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img src="imagens/instagram.svg" alt="Instagram" width="32" height="32">
+        </a>
+
+        <a href="https://www.linkedin.com/">
+          <img src="imagens/linkedin.svg" alt="LinkedIn" width="32" height="32">
+        </a>
+      </div>
+
+      <div id="desenvolvimento">
+        <p><strong>Projeto de Aula WDD 231</strong></p>
+        <p>Jackson Raupp</p>
+        <p>&copy; <span id="anoAtual"></span> Câmara de Comércio de Várzea Grande</p>
+        <p id="ultimaModificacao"></p>
+      </div>
+    </footer>
+  </body>
+</html>
