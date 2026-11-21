@@ -98,7 +98,7 @@
             type="text"
             name="cargo"
             title="Apenas letras, hífens e espaços, com pelo menos 7 caracteres"
-            autocomplete="organization-title"
+            autocomplete="cargo-na-organizacao"
             pattern="[A-Za-zÀ-ÿ \-]{7,}"
           >
         </label>
@@ -123,13 +123,14 @@
             type="text"
             name="empresa"
             title="Nome da empresa ou organização"
-            autocomplete="organization"
+            autocomplete="organizacao"
             required
           >
         </label>
 
         <label>Nível de associação
-          <select name="nivel" title="Nível de associação">
+          <select name="nivel" title="Nível de associação" required>
+              <option value="" disabled selected>Selecione um nível</option>
               <option value="np">Associação NP</option>
               <option value="bronze">Associação Bronze</option>
               <option value="silver">Associação Prata</option>
