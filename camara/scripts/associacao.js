@@ -5,3 +5,7 @@ document.querySelectorAll("[data-modal]").forEach((botao) => {
     document.getElementById(botao.dataset.modal).showModal();
   });
 });
+
+document.querySelectorAll(".fechar").forEach((botao) => {
+  botao.addEventListener("click", () => botao.closest("dialog").close());
+});
