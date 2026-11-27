@@ -1,10 +1,11 @@
 :root {
   color-scheme: dark;
-  --cor-primaria: #145218;
-  --cor-secundaria: #333;
-  --cor-fundo: #121212;
-  --cor-superficie: #1e1e1e;
-  --cor-texto: #ebebf0;
+  --cor-primaria: #007da5;
+  --cor-secundaria: #303030;
+  --cor-fundo: #303030;
+  --cor-superficie: #1a1a1a;
+  --cor-branco: #ffffff;
+  --cor-texto: #e0e0e0;
   --cor-texto-suave: #b8b8c0;
   --cor-borda: #444;
 }
@@ -24,6 +25,12 @@ a {
   color: var(--cor-texto);
 }
 
+h1,
+h2,
+h3 {
+  color: var(--cor-branco);
+}
+
 /* Cabeçalho */
 
 header {
@@ -32,7 +39,8 @@ header {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: var(--cor-primaria);
+  border-bottom: 4px solid var(--cor-primaria);
+  background-color: var(--cor-superficie);
 }
 
 #marca {
@@ -84,7 +92,7 @@ nav {
 }
 
 #menu a.ativo {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid var(--cor-primaria);
   font-weight: bold;
 }
 
@@ -111,7 +119,7 @@ h1 {
 #visualizacao button {
   padding: 6px 16px;
   border: 1px solid var(--cor-borda);
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-superficie);
   color: var(--cor-texto);
   cursor: pointer;
 }
@@ -122,8 +130,8 @@ h1 {
 }
 
 #visualizacao button[aria-pressed="true"] {
-  background-color: var(--cor-texto);
-  color: var(--cor-fundo);
+  background-color: var(--cor-branco);
+  color: var(--cor-superficie);
   font-weight: bold;
 }
 
@@ -255,14 +263,20 @@ h1 {
 #cta a {
   padding: 8px 20px;
   border-radius: 4px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-branco);
+  color: var(--cor-superficie);
   font-weight: bold;
   text-decoration: none;
 }
 
 #cta a:hover,
-#cta a:focus-visible {
-  background-color: #000;
+#cta a:focus-visible,
+input[type="submit"]:hover,
+.nivel-cartao button:hover,
+.lugar button:hover,
+dialog button:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
 }
 
 .cartao,
@@ -328,8 +342,8 @@ input[type="submit"],
 dialog button {
   padding: 8px 20px;
   border: 0;
-  background-color: var(--cor-primaria);
-  color: var(--cor-texto);
+  background-color: var(--cor-branco);
+  color: var(--cor-superficie);
   font-weight: bold;
   cursor: pointer;
 }

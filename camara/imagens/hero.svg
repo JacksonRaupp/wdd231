@@ -7,8 +7,8 @@
   </defs>
   <rect width="1200" height="500" fill="url(#ceu)"/>
   <circle cx="900" cy="230" r="90" fill="#fff3e0"/>
-  <path fill="#2e7d32" d="M0 330 Q300 260 600 320 T1200 300 V500 H0Z"/>
-  <g fill="#1b5e20">
+  <path fill="#303030" d="M0 330 Q300 260 600 320 T1200 300 V500 H0Z"/>
+  <g fill="#1a1a1a">
     <rect x="80" y="230" width="70" height="140"/>
     <rect x="170" y="180" width="90" height="190"/>
     <rect x="280" y="250" width="60" height="120"/>
@@ -20,5 +20,5 @@
     <rect x="980" y="170" width="80" height="200"/>
     <rect x="1080" y="230" width="90" height="140"/>
   </g>
-  <path fill="#0277bd" d="M0 420 Q300 390 600 420 T1200 410 V500 H0Z"/>
+  <path fill="#007da5" d="M0 420 Q300 390 600 420 T1200 410 V500 H0Z"/>
 </svg>
