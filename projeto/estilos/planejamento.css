@@ -2,7 +2,7 @@
   color-scheme: dark;
   --principal: #007da5;
   --escuro: #303030;
-  --amarelo: #ffc107;
+  --carvao: #1a1a1a;
   --branco: #ffffff;
   --texto: #e0e0e0;
 }
@@ -29,13 +29,13 @@ h2,
 header,
 footer {
   padding: 16px;
-  background-color: var(--principal);
+  background-color: var(--carvao);
   color: var(--branco);
   text-align: center;
 }
 
 header {
-  border-bottom: 4px solid var(--amarelo);
+  border-bottom: 4px solid var(--principal);
 }
 
 main {
@@ -75,8 +75,8 @@ ul {
   background-color: var(--escuro);
 }
 
-.amarelo {
-  background-color: var(--amarelo);
+.carvao {
+  background-color: var(--carvao);
 }
 
 .branco {
