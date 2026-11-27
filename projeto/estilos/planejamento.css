@@ -3,7 +3,7 @@
   --principal: #007da5;
   --escuro: #303030;
   --amarelo: #ffc107;
-  --fundo: #121212;
+  --branco: #ffffff;
   --texto: #e0e0e0;
 }
 
@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--fundo);
+  background-color: var(--escuro);
   color: var(--texto);
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -29,8 +29,8 @@ h2,
 header,
 footer {
   padding: 16px;
-  background-color: var(--escuro);
-  color: #fff;
+  background-color: var(--principal);
+  color: var(--branco);
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ main {
 
 h2 {
   margin-bottom: 8px;
-  color: var(--principal);
+  color: var(--branco);
 }
 
 ul {
@@ -79,8 +79,8 @@ ul {
   background-color: var(--amarelo);
 }
 
-.fundo {
-  background-color: var(--fundo);
+.branco {
+  background-color: var(--branco);
 }
 
 .fonte {
