@@ -1,8 +1,8 @@
 :root {
-  --laranja: #bf360c;
+  --principal: #007da5;
   --azul: #1a1a2e;
   --amarelo: #ffc107;
-  --cinza: #f5f5f5;
+  --branco: #ffffff;
   --texto: #222222;
 }
 
@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--cinza);
+  background-color: var(--branco);
   color: var(--texto);
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -47,7 +47,7 @@ main {
 
 h2 {
   margin-bottom: 8px;
-  color: var(--laranja);
+  color: var(--principal);
 }
 
 ul {
@@ -67,8 +67,8 @@ ul {
   border: 1px solid var(--texto);
 }
 
-.laranja {
-  background-color: var(--laranja);
+.principal {
+  background-color: var(--principal);
 }
 
 .azul {
@@ -79,8 +79,8 @@ ul {
   background-color: var(--amarelo);
 }
 
-.cinza {
-  background-color: var(--cinza);
+.branco {
+  background-color: var(--branco);
 }
 
 .fonte {
