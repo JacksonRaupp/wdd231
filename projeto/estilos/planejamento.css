@@ -54,8 +54,7 @@ ul {
   padding-left: 20px;
 }
 
-.cores,
-.wireframes {
+.cores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
@@ -90,6 +89,22 @@ ul {
 .exemplo-titulo,
 .exemplo-texto {
   font-size: 1.5rem;
+}
+
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.pequeno {
+  width: 220px;
+}
+
+.grande {
+  flex: 1;
+  min-width: 280px;
 }
 
 figure img {
