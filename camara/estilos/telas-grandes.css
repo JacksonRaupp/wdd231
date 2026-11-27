@@ -59,3 +59,31 @@
     text-align: end;
   }
 }
+
+@media (min-width: 641px) {
+  #lugares {
+    grid-template-areas:
+      "l1 l2"
+      "l3 l4"
+      "l5 l6"
+      "l7 l8";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lugar img {
+    transition: filter 0.3s;
+  }
+
+  .lugar img:hover {
+    filter: brightness(1.15) saturate(1.4);
+  }
+}
+
+@media (min-width: 1025px) {
+  #lugares {
+    grid-template-areas:
+      "l1 l2 l3 l4"
+      "l5 l6 l7 l8";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

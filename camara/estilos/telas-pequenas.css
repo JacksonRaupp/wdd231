@@ -324,6 +324,7 @@ textarea:focus-visible {
 
 input[type="submit"],
 .nivel-cartao button,
+.lugar button,
 dialog button {
   padding: 8px 20px;
   border: 0;
@@ -388,6 +389,79 @@ dialog::backdrop {
 #dados {
   margin: 12px 0;
   list-style: none;
+}
+
+/* Página sobre */
+
+.sobre {
+  display: grid;
+  gap: 16px;
+}
+
+#mensagem-visita {
+  padding: 12px 16px;
+  border-left: 4px solid var(--cor-primaria);
+  background-color: var(--cor-superficie);
+  font-weight: bold;
+}
+
+#lugares {
+  display: grid;
+  grid-template-areas:
+    "l1"
+    "l2"
+    "l3"
+    "l4"
+    "l5"
+    "l6"
+    "l7"
+    "l8";
+  gap: 16px;
+}
+
+.lugar:nth-child(1) { grid-area: l1; }
+.lugar:nth-child(2) { grid-area: l2; }
+.lugar:nth-child(3) { grid-area: l3; }
+.lugar:nth-child(4) { grid-area: l4; }
+.lugar:nth-child(5) { grid-area: l5; }
+.lugar:nth-child(6) { grid-area: l6; }
+.lugar:nth-child(7) { grid-area: l7; }
+.lugar:nth-child(8) { grid-area: l8; }
+
+.lugar {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-superficie);
+}
+
+.lugar h2 {
+  font-size: 1.1rem;
+}
+
+.lugar img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lugar figcaption {
+  margin-top: 4px;
+  font-size: 0.7rem;
+}
+
+.lugar figcaption a {
+  color: var(--cor-texto-suave);
+}
+
+.lugar address {
+  color: var(--cor-texto-suave);
+}
+
+.lugar button {
+  justify-self: start;
 }
 
 /* Rodapé */
