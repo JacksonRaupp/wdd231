@@ -25,7 +25,6 @@ a {
   color: var(--cor-texto);
 }
 
-h1,
 h2,
 h3 {
   color: var(--cor-branco);
@@ -108,6 +107,7 @@ main {
 
 h1 {
   margin-bottom: 12px;
+  color: var(--cor-branco);
 }
 
 #visualizacao {
@@ -283,11 +283,8 @@ h1 {
   padding: 1px 6px;
   border-radius: 4px;
   background-color: rgb(0 0 0 / 70%);
-  font-size: 0.65rem;
-}
-
-#credito-hero {
   color: var(--cor-branco);
+  font-size: 0.65rem;
   text-decoration: none;
 }
 
@@ -315,8 +312,7 @@ dialog button:hover {
   color: var(--cor-branco);
 }
 
-.cartao,
-#destaques .membro {
+.cartao {
   padding: 16px;
   border: 1px solid var(--cor-borda);
   background-color: var(--cor-superficie);
@@ -333,6 +329,7 @@ dialog button:hover {
 
 #destaques .membro {
   display: grid;
+  padding: 16px;
   justify-items: center;
   gap: 4px;
   text-align: center;
@@ -503,10 +500,6 @@ dialog::backdrop {
 
 .lugar address {
   color: var(--cor-texto-suave);
-}
-
-.lugar button {
-  justify-self: start;
 }
 
 /* Rodapé */
