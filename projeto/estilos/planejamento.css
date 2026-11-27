@@ -1,9 +1,10 @@
 :root {
+  color-scheme: dark;
   --principal: #007da5;
   --escuro: #303030;
   --amarelo: #ffc107;
-  --branco: #ffffff;
-  --texto: #222222;
+  --fundo: #121212;
+  --texto: #e0e0e0;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-  background-color: var(--branco);
+  background-color: var(--fundo);
   color: var(--texto);
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -78,8 +79,8 @@ ul {
   background-color: var(--amarelo);
 }
 
-.branco {
-  background-color: var(--branco);
+.fundo {
+  background-color: var(--fundo);
 }
 
 .fonte {
