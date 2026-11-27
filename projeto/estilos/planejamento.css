@@ -1,6 +1,6 @@
 :root {
   --principal: #007da5;
-  --azul: #1a1a2e;
+  --escuro: #303030;
   --amarelo: #ffc107;
   --branco: #ffffff;
   --texto: #222222;
@@ -28,7 +28,7 @@ h2,
 header,
 footer {
   padding: 16px;
-  background-color: var(--azul);
+  background-color: var(--escuro);
   color: #fff;
   text-align: center;
 }
@@ -71,8 +71,8 @@ ul {
   background-color: var(--principal);
 }
 
-.azul {
-  background-color: var(--azul);
+.escuro {
+  background-color: var(--escuro);
 }
 
 .amarelo {
