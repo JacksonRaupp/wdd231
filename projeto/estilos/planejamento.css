@@ -1,0 +1,103 @@
+:root {
+  --laranja: #bf360c;
+  --azul: #1a1a2e;
+  --amarelo: #ffc107;
+  --cinza: #f5f5f5;
+  --texto: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--cinza);
+  color: var(--texto);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+.exemplo-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+header,
+footer {
+  padding: 16px;
+  background-color: var(--azul);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  border-bottom: 4px solid var(--amarelo);
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  color: var(--laranja);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.cores,
+.wireframes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.amostra {
+  display: block;
+  height: 60px;
+  border: 1px solid var(--texto);
+}
+
+.laranja {
+  background-color: var(--laranja);
+}
+
+.azul {
+  background-color: var(--azul);
+}
+
+.amarelo {
+  background-color: var(--amarelo);
+}
+
+.cinza {
+  background-color: var(--cinza);
+}
+
+.fonte {
+  margin-bottom: 12px;
+}
+
+.exemplo-titulo,
+.exemplo-texto {
+  font-size: 1.5rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--texto);
+}
+
+figcaption {
+  text-align: center;
+}
