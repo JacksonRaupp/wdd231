@@ -3,16 +3,22 @@ import { lugares } from "../dados/lugares.mjs";
 document.getElementById("lugares").innerHTML = lugares
   .map((lugar) => `
     <article class="lugar">
-      <h2>${lugar.nome}</h2>
       <figure>
         <img src="imagens/${lugar.imagem}" alt="Foto de ${lugar.nome}" width="300" height="200" loading="lazy">
-        <figcaption><a href="${lugar.fonte}">${lugar.credito}</a></figcaption>
       </figure>
+      <h2>${lugar.nome}</h2>
       <address>${lugar.endereco}</address>
       <p>${lugar.descricao}</p>
       <button type="button">Saiba mais</button>
     </article>`)
   .join("");
+
+document.getElementById("creditos").innerHTML =
+  "Créditos das fotos: " +
+  lugares
+    .map((lugar) => `<a href="${lugar.fonte}">${lugar.nome}</a> - ${lugar.credito.replace("Foto: ", "")}`)
+    .join("; ") +
+  ".";
 
 const agora = Date.now();
 const ultimaVisita = Number(localStorage.getItem("ultimaVisita"));

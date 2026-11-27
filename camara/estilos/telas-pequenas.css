@@ -247,30 +247,57 @@ h1 {
   object-fit: cover;
 }
 
-#credito-hero {
+/* Gradiente escuro só na região do texto, para garantir a leitura */
+#hero::after {
+  content: "";
   position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 2px 6px;
-  background-color: var(--cor-superficie);
-  font-size: 0.7rem;
+  inset: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 85%), rgb(0 0 0 / 60%) 45%, transparent 80%);
 }
 
 #cta {
   position: absolute;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  max-width: 360px;
+  z-index: 1;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
   display: grid;
   justify-items: start;
   gap: 8px;
-  padding: 16px;
-  background-color: var(--cor-superficie);
+  color: var(--cor-branco);
+  text-shadow: 0 1px 4px rgb(0 0 0 / 70%);
+}
+
+#cta h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* Crédito das fotos: etiqueta pequena no canto da imagem */
+#credito-hero {
+  position: absolute;
+  z-index: 1;
+  right: 6px;
+  bottom: 6px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background-color: rgb(0 0 0 / 70%);
+  font-size: 0.65rem;
+}
+
+#credito-hero {
+  color: var(--cor-branco);
+  text-decoration: none;
+}
+
+#credito-hero:hover {
+  text-decoration: underline;
 }
 
 #cta a {
   padding: 8px 20px;
+  text-shadow: none;
   border-radius: 4px;
   background-color: var(--cor-branco);
   color: var(--cor-superficie);
@@ -470,13 +497,8 @@ dialog::backdrop {
   height: auto;
 }
 
-.lugar figcaption {
-  margin-top: 4px;
-  font-size: 0.7rem;
-}
-
-.lugar figcaption a {
-  color: var(--cor-texto-suave);
+#creditos {
+  font-size: 0.75rem;
 }
 
 .lugar address {

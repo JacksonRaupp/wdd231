@@ -36,6 +36,20 @@
     height: auto;
   }
 
+  #hero::after {
+    background: linear-gradient(to right, rgb(0 0 0 / 85%), rgb(0 0 0 / 60%) 35%, transparent 65%);
+  }
+
+  #cta {
+    bottom: 40px;
+    left: 40px;
+    max-width: 420px;
+  }
+
+  #cta h1 {
+    font-size: 2.2rem;
+  }
+
   #lista-destaques {
     grid-template-columns: repeat(3, 1fr);
   }
